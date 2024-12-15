@@ -1,11 +1,12 @@
 body {
     font-family: sans-serif;
+    background-color: rgb(215, 215, 215);
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 button {
@@ -18,4 +19,28 @@ button {
 
 label {
     font-weight: bold;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card p {
+    margin: 0;
+}
+
+.card {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid gray;
+    width: 100%;
+    border-radius: 5px;
 }
