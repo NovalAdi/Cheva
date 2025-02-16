@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(218, 255, 255);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+form {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(154, 229, 229);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 30%;
+}
+
+.input,
+button {
+    width: 100%;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+}
+
+button {
+    padding: 7px 0;
+    border-radius: 5px;
+}
+
+input {
+    width: 96%;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.check input {
+    width: auto;
+}
+
+
+.action {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
