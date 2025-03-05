@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../week1/style.css">
+    <link rel="stylesheet" href="tugas.css">
+</head>
+
+<body>
+    <h1 class="title">To-Do List</h1>
+
+    <div class="form">
+        <div>
+            <label>Nama Tugas</label>
+            <input id="title" type="text" placeholder="Masukkan nama tugas">
+        </div>
+        <div class="field">
+            <label>Deskripsi Tugas</label>
+            <textarea id="desc" placeholder="Masukkan deskripsi tugas"></textarea>
+        </div>
+        <div class="field">
+            <label>Deadline Tugas</label>
+            <input id="deadline" type="date" placeholder="Masukkan deskripsi tugas">
+        </div>
+        <div class="field">
+            <button onclick="addNote()">Tambahkan</button>
+        </div>
+    </div>
+
+    <section>
+        <h1>Daftar Tugas</h1>
+
+        <div id="notes-list" class="container"></div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
