@@ -2,7 +2,19 @@ let notes = []
 
 let notesElement = document.getElementById('notes-list')
 
+function loadData() {
+    const data = localStorage.getItem('notes')
+    if (data) {
+        notes = JSON.parse(data)
+    }
+}
+
+function saveData() {
+    localStorage.setItem('notes', JSON.stringify(notes))
+}
+
 function renderNotes() {
+    notesElement.innerHTML = "";
     notes.forEach((note, index) => {
         const newElemnet = `
         <div class="card">
@@ -27,13 +39,16 @@ function addNote() {
             deadline: newDeadline
         }
         notes.push(newData)
+        saveData()
         renderNotes()
     }
 }
 
 function deleteNote(index) {
     notes.splice(index, 1)
+    saveData()
     renderNotes()
 }
 
+loadData()
 renderNotes()
